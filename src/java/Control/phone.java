@@ -49,7 +49,11 @@ public class phone extends HttpServlet {
         Telefonia t = new Telefonia();
         
         String nombre = request.getParameter("nombre");
-        int idPlan = Integer.parseInt(request.getParameter("idplan"));
+        int idPlan=0;
+        if(request.getParameter("idplan")!=null)
+            idPlan = Integer.parseInt(request.getParameter("idplan"));
+        else
+            idPlan = (Integer)request.getSession().getAttribute("idplan");
         String[] selec = request.getParameterValues("selectServ");
         String equipos = t.checkBoxSmarphones();
         String planinfo[]= t.getPlanInfo(idPlan);

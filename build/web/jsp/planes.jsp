@@ -18,7 +18,12 @@ and open the template in the editor.
         <title>Simulador de planes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" href="./css/style.css">
+        
+        <link rel="stylesheet" href="./css/planes.css">
+        <link rel="stylesheet" href="./css/servicios.css">
+        
     </head>
     <body>
         <header>
@@ -37,7 +42,7 @@ and open the template in the editor.
                  for (ServicioXplan serv : adicionales) {
                      opciones+= "<label><input type='checkbox' name='"+"selectServ"+"' value='"+serv.getServicioXplanPK().getCodigoServicio()
                              +"-"+serv.getServiciosAdicionales().getNombreServicio()+
-                             "'>"+serv.getServiciosAdicionales().getNombreServicio()+"</label>\n";
+                             "'>"+"<span>"+serv.getServiciosAdicionales().getNombreServicio()+"</span></label>\n";
                  }
                  String idPlan ="<label> <input type='hidden' name='idplan' value='" +String.valueOf(plan.getCodigoPlan())+"'></label>";
                  String nombreU ="<label> <input type='hidden' name='nombre' value='" +nombre+"'></label>";

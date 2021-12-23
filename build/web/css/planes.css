@@ -1,0 +1,13 @@
+
+main>p{
+    margin-left: 10px;
+    text-align: left;
+}
+form>label{
+    margin-left: 10px;
+    text-align: left;
+    align-self: flex-start;
+}
+form>input{
+    margin-top: 10px;
+}

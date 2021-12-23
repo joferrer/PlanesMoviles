@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    align-self: center;
+    
+}
+th,td{
+    border: 1px solid black;
+    
+}
+.item{
+    width: 100px;
+    height: 20px;
+}
+.descripcion{
+    width: 400px;
+    height: 20px;
+}
+.valor{
+    width: 420px;
+    height: 20px;
+}

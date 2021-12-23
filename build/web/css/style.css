@@ -70,3 +70,16 @@ footer>section>a>img{
     width: 100px;
     height: 150px;
 }
+button,input{
+    padding: 5px;
+    align-self: center;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+       
+}
+form>label{
+    align-self: center;
+}

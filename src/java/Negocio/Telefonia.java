@@ -114,9 +114,9 @@ public class Telefonia {
                 + " <th colspan=3> Cotizacion</th>\n"
                 + "</tr>\n"
                 + "<tr>\n"
-                + "  <th> item </th>\n"
-                + "  <th> descripcion </th>\n"
-                + "  <th> valor </th>\n"
+                + "  <th class='item'> item </th>\n"
+                + "  <th class='descripcion'> descripcion </th>\n"
+                + "  <th class='valor'> valor </th>\n"
                 + "</tr>";
 
         LinkedList<Integer> precios = new LinkedList<>();
@@ -134,14 +134,15 @@ public class Telefonia {
                 + "</tr>";
 
         
-        int i=0;
+        int i=1;
         if (!servicios.isEmpty()) {
             String serv[] = servicios.split("-");
-            for (i = 0; i < serv.length; i++) {
-                int idServ = Integer.parseInt(serv[i]);
+            for (int k = 0; k < serv.length; k++) {
+                int idServ = Integer.parseInt(serv[k]);
                 int precioS = getPrecioServicioXPlan(planId, idServ);
+                i++;
                 table += "<tr>\n"
-                + "<td>\n" + (i+1)
+                + "<td>\n" + i
                 + "</td>\n"
                 + "<td>\n" + getNombreServicio(idServ) +"</td>\n"
                 + "<td>\n" + precioS +"</td>\n"

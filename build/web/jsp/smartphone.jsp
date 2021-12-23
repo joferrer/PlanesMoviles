@@ -17,11 +17,15 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        
+        <link rel="stylesheet" href="./css/planes.css">
+        <link rel="stylesheet" href="./css/servicios.css">
     </head>
     <body>
         <header>
             <h1>Simulador de planes</h1>
             <a href="index.html"><img src="./img/logoCucutaPhone.png"></a>
+            
         </header>
         <main>
             <% 

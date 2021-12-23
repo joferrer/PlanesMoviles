@@ -50,11 +50,8 @@ public class ServiciosAdicionales extends HttpServlet {
           String nombre = request.getParameter("nombre");
           int plan = Integer.parseInt(request.getParameter("planes"));
           List<ServicioXplan> lista ;
-          if(request.getSession().getAttribute("servicios")!=null){
+         
           
-              lista = (List<ServicioXplan>) request.getSession().getAttribute("servicios");
-          }
-          else
             lista = t.serviciosDelPlan(plan); //List con todos los servicios del plan con la id dada.
           
           if(!lista.isEmpty()){
@@ -64,6 +61,12 @@ public class ServiciosAdicionales extends HttpServlet {
               request.getSession().setAttribute("plan", lista.get(0).getPlanMovil());
               request.getRequestDispatcher("./jsp/planes.jsp").forward(request, response);
              
+          }
+          else{
+          
+              request.getSession().setAttribute("nombre", nombre);
+              request.getSession().setAttribute("idplan", plan);
+              request.getRequestDispatcher("./phone").forward(request, response);
           }
           
           

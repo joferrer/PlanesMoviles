@@ -1,0 +1,11 @@
+form>label{
+    align-self: center;
+    width: 400px;
+    margin-left: 10px;
+    text-align: left;
+}
+form>input{
+    margin-top: 10px;
+    padding: 8px;
+    width: 250px;
+}
