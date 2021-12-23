@@ -3,16 +3,32 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DTO/PlanMovil.java</file>
             <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/css/style.css</file>
-            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DAO/PlanMovilJpaController.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/jsp/planes.jsp</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DTO/ServicioXplan.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/jsp/cotizacion.jsp</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/jsp/cotizador.jsp</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/css/planes.css</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DTO/PlanMovil.java</file>
             <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Negocio/Telefonia.java</file>
-            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DAO/Conexion.java</file>
             <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Prueba/TestDB.java</file>
-            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/jsp/ListadoPlanes.jsp</file>
             <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Control/ListarPlanes.java</file>
-            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Prueba/TestDBCrearPlan.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DTO/Smartphone.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DTO/ServiciosAdicionales.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Control/phone.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Control/verInfoPlanes.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Control/SeleccionPlan.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Control/Cotizacion.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DAO/ServicioXplanJpaController.java</file>
             <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/index.html</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/jsp/verTodoInfoPlan.jsp</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Control/ServiciosAdicionales.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DAO/ServiciosAdicionalesJpaController.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DAO/PlanMovilJpaController.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/DAO/Conexion.java</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/jsp/smartphone.jsp</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/web/jsp/ListadoPlanes.jsp</file>
+            <file>file:/C:/Users/jeiso/Documents/NetBeansProjects/Examen-PGWEB/src/java/Prueba/TestDBCrearPlan.java</file>
         </group>
     </open-files>
 </project-private>

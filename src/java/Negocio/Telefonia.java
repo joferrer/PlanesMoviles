@@ -184,6 +184,58 @@ public class Telefonia {
         return table;
     }
 
+    public List<PlanMovil> getPlanes(){
+        PlanMovilJpaController p = new PlanMovilJpaController(c.getBd());
+        
+        return p.findPlanMovilEntities();
+    } 
+    public ServiciosAdicionales getServicio(int idServ){
+        ServiciosAdicionalesJpaController p = new ServiciosAdicionalesJpaController(c.getBd());
+        return p.findServiciosAdicionales(idServ);
+    }
+    public String getTablaInfoPlanes(){
+        
+        String tabla = " <table class='table-bordered'>\n";
+        String servicioT = "<tr class='trPrincipal'>\n"
+                +"<th>Id del Plan</th>"
+                +"<th>Nombre</th>"
+                + "<th>Precio</th>"
+                +"</tr>";
+        
+        for (PlanMovil plan : getPlanes()) {
+            int idPlan = plan.getCodigoPlan();
+            String nombrePlan = plan.getNombrePlan();
+            int precioPlan = plan.getPrecio();
+            
+            
+            List<ServicioXplan> servicios = serviciosDelPlan(idPlan);
+            String rowSp= String.valueOf(servicios.size()+2);
+            servicioT+= "<tr>"
+            +"<td rowspan='"+ rowSp +"'>"+String.valueOf(idPlan)+"</td>"
+            +"<td>"+nombrePlan+"</td>"
+            +"<td>"+String.valueOf(precioPlan)+"</td>"
+            + "</tr>";
+            
+            servicioT+= "<tr>\n" +
+"            <td colspan=\"2\" class=\"tdadicionales\">Adicionales</td>\n" +
+"        </tr>";
+        
+            
+            for (ServicioXplan servicio : servicios) {
+                int servId = servicio.getServicioXplanPK().getCodigoServicio();
+                ServiciosAdicionales servA = getServicio(servId);
+                String nombA = servA.getNombreServicio();
+                servicioT+= "<tr>\n" +
+"                   <td>"+nombA+"</td>\n" +
+"                   <td>"+String.valueOf(servicio.getPrecio())+"</td>\n" +
+"                   </tr>";             
+                
+            }
+        }
+        tabla+=servicioT;
+        return tabla +"</table>";
+    }
+    
     public String getListadoPlanes() {
         String tabla = "\n<table border='1'>";
         tabla += "\n<tr>"

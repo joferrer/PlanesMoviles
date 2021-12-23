@@ -20,6 +20,10 @@
         <servlet-name>Cotizacion</servlet-name>
         <servlet-class>Control.Cotizacion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>verInfoPlanes</servlet-name>
+        <servlet-class>Control.verInfoPlanes</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ListarPlanes</servlet-name>
         <url-pattern>/ListarPlanes</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>Cotizacion</servlet-name>
         <url-pattern>/Cotizacion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>verInfoPlanes</servlet-name>
+        <url-pattern>/verInfoPlanes</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
